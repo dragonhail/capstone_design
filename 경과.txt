@@ -1,0 +1,9 @@
+100hz sampling 1ch 4ch 60sec->약 70000개 samples, nucleo32 보드: nuclear 401RE
+
+sampling speed test->1Msamples/1.5sec
+
+free-running mode test->sampling 개수 변화X(컴퓨터 보내는 시간때문에 지연발생)
+
+다양한 주파수(sin(2*pi*100*t)+sin(2*pi*250*t)+sin(2*pi*1000*t)로 테스트, free-runnig mode로 배열여러개에 받은다음 받아오기->단일배열 23460개 최대->읽어오기 불가, 2차원 배열 읽기불가
+
+SD카드 EEPROM 등등 에 써서 읽기 시도?
